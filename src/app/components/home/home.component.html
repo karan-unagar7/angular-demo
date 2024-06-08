@@ -1,0 +1,18 @@
+<div>
+  <h2>All Code Snippet Available</h2>
+  <p>For More Details Click On Code Snippet</p>
+  <ul>
+    @if(items.length == 0){
+    <li>No data</li>
+    } @for (item of items; track item.id) {
+    <li>
+      <a [routerLink]="['/snippet', item.id]">{{ item.title }}</a>
+    </li>
+    }
+  </ul>
+</div>
+
+
+
+
+
